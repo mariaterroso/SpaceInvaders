@@ -34,7 +34,7 @@ public class SpawnInvaders : MonoBehaviour
 
     float tempo = 0f;
 
-    float velocidade = 0.001f;
+    float velocidade = 0.0005f;
 
     bool movimento = true;
 

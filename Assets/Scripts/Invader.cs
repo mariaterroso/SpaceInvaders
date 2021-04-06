@@ -23,25 +23,21 @@ public class Invader : MonoBehaviour
     float tempoEspera = 3.0f;
 
     [SerializeField]
-    float vidasInvasores = 10f;
+    float Ivida = 10f;
 
     void Start()
     {
         tempoEspera = tempoEspera + Random.Range(minTempo, maxTempo);
-
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (tag == "Destrutivel")
         {
             if (Time.time > tempoEspera)
             {
-
                 tempoEspera = tempoEspera + Random.Range(minTempo, maxTempo);
-
                 Instantiate(fire, transform.position, Quaternion.identity);
-
             }
 
         }
@@ -60,9 +56,9 @@ public class Invader : MonoBehaviour
         }
         else
         {
-            vidasInvasores -= 1;
+            Ivida -= 1;
 
-            if (vidasInvasores < 1)
+            if (Ivida < 1)
             {
 
                 Destroy(gameObject);

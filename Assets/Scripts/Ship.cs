@@ -66,7 +66,6 @@ public class Ship : MonoBehaviour
                 Destroy(gameObject);
                 Destroy(collision.gameObject);
             }
-
      }
 
-    }
+ }

@@ -61,7 +61,7 @@ public class Ship : MonoBehaviour
     {
         vidas -= 1;
 
-            if (vidas < 1)
+            if (vidas <= 0)
             {
                 Destroy(gameObject);
                 Destroy(collision.gameObject);
